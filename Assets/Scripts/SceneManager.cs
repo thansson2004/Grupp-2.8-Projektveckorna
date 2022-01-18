@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,5 +14,10 @@ public class SceneManager : MonoBehaviour
             // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
             SceneManager.LoadScene("OtherSceneName", LoadSceneMode.Additive);
         }
+    }
+
+    private static void LoadScene(string v, LoadSceneMode additive)
+    {
+        throw new NotImplementedException();
     }
 }
