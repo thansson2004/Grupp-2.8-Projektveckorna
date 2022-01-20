@@ -17,4 +17,20 @@ public class Movement : MonoBehaviour
 
         transform.position += moveDirection * speed;
     }
+
+    private Animator animator;
+    public LayerMask interactableLayer;
+
+   
+    
+
+
+   
+    
+    
+
+   
 }
+
+
+
