@@ -39,6 +39,7 @@ public class NewInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Inrange = true;
+            Debug.Log("japp");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -47,6 +48,7 @@ public class NewInteraction : MonoBehaviour
         {
             Inrange = false;
             InteractBox.SetActive(false);
+            Debug.Log("nähä du");
         }
     }
 }
