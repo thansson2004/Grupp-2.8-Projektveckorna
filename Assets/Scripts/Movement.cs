@@ -16,12 +16,16 @@ public class Movement : MonoBehaviour
         Vector3 moveDirection = new Vector3(xDirection, yDirection, 0.0f);
 
         transform.position += moveDirection * speed;
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
-    private Animator animator;
+    public Animator animator;
     public LayerMask interactableLayer;
+    Vector2 movement;
 
-   
     
 
 

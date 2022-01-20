@@ -116,7 +116,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,7 +128,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,10 +142,10 @@ TextureImporter:
       name: DadWalkSpritesheet_0
       rect:
         serializedVersion: 2
-        x: 222
-        y: 3230
-        width: 580
-        height: 676
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: DadWalkSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 1246
-        y: 3198
-        width: 548
-        height: 740
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: DadWalkSpritesheet_2
       rect:
         serializedVersion: 2
-        x: 2270
-        y: 3230
-        width: 580
-        height: 676
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: DadWalkSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 3326
-        y: 3198
-        width: 548
-        height: 740
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: DadWalkSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 286
-        y: 2206
-        width: 484
-        height: 676
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: DadWalkSpritesheet_5
       rect:
         serializedVersion: 2
-        x: 1310
-        y: 2206
-        width: 484
-        height: 708
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: DadWalkSpritesheet_6
       rect:
         serializedVersion: 2
-        x: 2334
-        y: 2206
-        width: 484
-        height: 676
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: DadWalkSpritesheet_7
       rect:
         serializedVersion: 2
-        x: 3358
-        y: 2206
-        width: 484
-        height: 708
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: DadWalkSpritesheet_8
       rect:
         serializedVersion: 2
-        x: 254
-        y: 1182
-        width: 484
-        height: 676
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: DadWalkSpritesheet_9
       rect:
         serializedVersion: 2
-        x: 1278
-        y: 1182
-        width: 484
-        height: 708
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: DadWalkSpritesheet_10
       rect:
         serializedVersion: 2
-        x: 2302
-        y: 1182
-        width: 484
-        height: 676
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: DadWalkSpritesheet_11
       rect:
         serializedVersion: 2
-        x: 3326
-        y: 1182
-        width: 484
-        height: 708
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +394,10 @@ TextureImporter:
       name: DadWalkSpritesheet_12
       rect:
         serializedVersion: 2
-        x: 222
-        y: 158
-        width: 580
-        height: 676
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +415,10 @@ TextureImporter:
       name: DadWalkSpritesheet_13
       rect:
         serializedVersion: 2
-        x: 1278
-        y: 126
-        width: 548
-        height: 740
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: DadWalkSpritesheet_14
       rect:
         serializedVersion: 2
-        x: 2270
-        y: 158
-        width: 580
-        height: 676
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: DadWalkSpritesheet_15
       rect:
         serializedVersion: 2
-        x: 3294
-        y: 126
-        width: 548
-        height: 740
+        x: 3072
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
