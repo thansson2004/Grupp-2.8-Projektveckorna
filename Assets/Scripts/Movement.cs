@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
+    public Rigidbody2D rb;
     public float speed = .01f;
- 
+
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -17,23 +19,33 @@ public class Movement : MonoBehaviour
 
         transform.position += moveDirection * speed;
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        animator.SetFloat("Horizontal", xDirection);
+        animator.SetFloat("Vertical", yDirection);
+        
+        animator.SetFloat("Speed", moveDirection.sqrMagnitude);
+
+
+ 
     }
 
-    public Animator animator;
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+    }
+
+
+
     public LayerMask interactableLayer;
     Vector2 movement;
+    public Animator animator;
 
-    
 
 
-   
-    
-    
 
-   
+
+
+
+
 }
 
 
