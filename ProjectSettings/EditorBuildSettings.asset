@@ -14,6 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Utomhus.unity
     guid: a61a7e4fad7119748b1d0de74f55e2b0
+  - enabled: 1
+    path: Assets/Scenes/ForrestPreBattle.unity
+    guid: cfa4aed4fc2f953408e24fa5ea9d4dfb
+  - enabled: 1
+    path: Assets/Scenes/VildsvinFighting.unity
+    guid: d0e31f1f70254b245bed0023ab6fd68d
+  - enabled: 1
+    path: Assets/Scenes/ForrestPostBattle.unity
+    guid: b49b77216e35be84c9b0fa3577fbe84a
+  - enabled: 1
+    path: Assets/Scenes/Park.unity
+    guid: 41dd033f4b161d84b8ed68dda7df2d1a
+  - enabled: 1
+    path: "Assets/Scenes/Utanf\xF6rKoop.unity"
+    guid: 132608135324fde4784c7396469d0448
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
