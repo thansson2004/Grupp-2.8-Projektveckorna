@@ -127,6 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  maxHP: 30
-  currentHP: 30
+  maxHP: 1
+  currentHP: 1
   unitName: "En Tant Vill Ha Den Sista Mj\xF6lken Och"

@@ -27,8 +27,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Park.unity
     guid: 41dd033f4b161d84b8ed68dda7df2d1a
   - enabled: 1
+    path: Assets/Scenes/Man fight.unity
+    guid: 401e17b8b7e5b534d906754b094091b0
+  - enabled: 1
     path: "Assets/Scenes/Utanf\xF6rKoop.unity"
     guid: 132608135324fde4784c7396469d0448
+  - enabled: 1
+    path: Assets/Scenes/TantFight.unity
+    guid: 1d769a022bb3a804abd6e4f598ba8995
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
