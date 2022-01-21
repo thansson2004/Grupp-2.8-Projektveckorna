@@ -129,4 +129,4 @@ MonoBehaviour:
   damage: 10
   maxHP: 30
   currentHP: 30
-  unitName: Konstig Man
+  unitName: En Konstig Man

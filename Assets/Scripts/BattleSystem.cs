@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 public class BattleSystem : MonoBehaviour
 {
@@ -35,7 +35,7 @@ public class BattleSystem : MonoBehaviour
       GameObject enemyGo = Instantiate(enemyPrefab, enemyBattlestation);
         enemyUnit = enemyGo.GetComponent<Fighting>();
 
-        dialog.text = "En " + enemyUnit.unitName + " Attackerar dig!";
+        dialog.text = enemyUnit.unitName + " Attackerar dig!";
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
         state = BattleState.PLAYERTURN;
@@ -94,10 +94,14 @@ public class BattleSystem : MonoBehaviour
         if(state == BattleState.WON)
         {
             dialog.text = "Du besegrade " + enemyUnit.unitName + "!!!";
+          
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else if (state == BattleState.LOST)
         {
             dialog.text = "O nej, du förlorade!";
+           
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
     public void OnAttackButton()
