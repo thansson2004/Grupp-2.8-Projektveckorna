@@ -24,4 +24,8 @@ public class Fighting : MonoBehaviour
             currentHP = maxHP;
         }
     }
+    public void Buff(int amount)
+    {
+        damage += amount;
+    }
 }

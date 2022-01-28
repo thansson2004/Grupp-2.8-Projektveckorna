@@ -21,6 +21,7 @@ public class BattleSystem : MonoBehaviour
 
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
+    int ai = 1;
     void Start()
     {
         state = BattleState.START;
@@ -55,7 +56,7 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             state = BattleState.WON;
-            EndBattle();
+            StartCoroutine(EndBattle());
         }
         else
         {
@@ -74,6 +75,7 @@ public class BattleSystem : MonoBehaviour
     }
     IEnumerator EnemyTurn()
     {
+        ai = Random.Range(1, 4);
         dialog.text = enemyUnit.unitName + " attackerar!";
         yield return new WaitForSeconds(1f);
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
@@ -82,26 +84,28 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             state = BattleState.LOST;
-            EndBattle();
-        }else
+            StartCoroutine(EndBattle());
+        }
+        else
         {
             state = BattleState.PLAYERTURN;
             playerturn();
         }
     }
-    void EndBattle()
+    IEnumerator EndBattle()
     {
         if(state == BattleState.WON)
         {
             dialog.text = "Du besegrade " + enemyUnit.unitName + "!!!";
+            yield return new WaitForSeconds(2f);
           
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else if (state == BattleState.LOST)
         {
             dialog.text = "O nej, du förlorade!";
-           
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene("GameOver");
         }
     }
     public void OnAttackButton()
@@ -114,5 +118,21 @@ public class BattleSystem : MonoBehaviour
         if (state != BattleState.PLAYERTURN) return;
         StartCoroutine(playerHeal());
     }
-
+    public void OnBuffButton()
+    {
+        if (state != BattleState.PLAYERTURN) return;
+        StartCoroutine(playerBuff());
+    }
+    IEnumerator playerBuff()
+    {
+        playerUnit.Buff(25);
+        dialog.text = "Du ringer ditt ex";
+        yield return new WaitForSeconds(1f);
+        dialog.text = "Du blir arg av att höra hennes röst";
+        yield return new WaitForSeconds(1f);
+        dialog.text = "Attack ökas med ett steg...";
+        yield return new WaitForSeconds(2f);
+        state = BattleState.ENEMYTURN;
+        StartCoroutine(EnemyTurn());
+    }
 }
