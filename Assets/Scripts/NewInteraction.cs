@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//Victor
 
 
 public class NewInteraction : MonoBehaviour
@@ -21,14 +21,14 @@ public class NewInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Inrange)  // checkar så att man trycker på tangenten och är tillräckligt nära. Victor
+        if (Input.GetKeyDown(KeyCode.E) && Inrange)  // checkar så att man trycker på tangenten och är tillräckligt nära.
         {
             if(InteractBox.activeInHierarchy)
             {
                 InteractBox.SetActive(false);
             }
-            else
-            {
+            else                                                   //Stänger av boxen ifall den redan är aktiv, och aktiverar den som den inte är aktiv
+            {          
                 InteractBox.SetActive(true);
                 InteractText.text = Interaction;
             }
@@ -39,14 +39,14 @@ public class NewInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Inrange = true;
-            Debug.Log("japp");
+            Debug.Log("japp");     //Gör så att man kan aktivera textboxen
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Inrange = false;
+            Inrange = false;                           //Gör så att boxen försvinner om man går utanför objektets område
             InteractBox.SetActive(false);
             Debug.Log("nähä du");
         }

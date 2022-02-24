@@ -19,8 +19,8 @@ public class Movement : MonoBehaviour
 
         transform.position += moveDirection * speed;
 
-        animator.SetFloat("Horizontal", xDirection);
-        animator.SetFloat("Vertical", yDirection);
+        animator.SetFloat("Horizontal", xDirection);           //Skapar Floats för animatorn så rätt animationer spelas. Victor
+        animator.SetFloat("Vertical", yDirection); 
         
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);       
     }
 
 
