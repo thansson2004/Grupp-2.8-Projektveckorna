@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Utanf\xF6rKoop.unity"
     guid: 132608135324fde4784c7396469d0448
   - enabled: 1
+    path: Assets/Scenes/Koop.unity
+    guid: 1bb1b3a98e34b964786bedfb19f96d2c
+  - enabled: 1
     path: Assets/Scenes/TantFight.unity
     guid: 1d769a022bb3a804abd6e4f598ba8995
   - enabled: 1
@@ -41,4 +44,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b6616c67987020844b80763b298d51f3
   m_configObjects: {}

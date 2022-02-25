@@ -22,6 +22,10 @@ public class Movement : MonoBehaviour
         animator.SetFloat("Horizontal", xDirection);           //Skapar Floats f�r animatorn s� r�tt animationer spelas. Victor
         animator.SetFloat("Vertical", yDirection); 
 
+
+        animator.SetFloat("Horizontal", xDirection);           //Skapar Floats f�r animatorn s� r�tt animationer spelas. Victor
+        animator.SetFloat("Vertical", yDirection); 
+
         
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
