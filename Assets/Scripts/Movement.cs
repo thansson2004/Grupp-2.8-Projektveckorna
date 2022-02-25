@@ -19,9 +19,9 @@ public class Movement : MonoBehaviour
 
         transform.position += moveDirection * speed; // Räknar ut om hur snabbt man går åt de hållet man går
 
-        // ᏇᎩፈᎤᏖᏂåᏒ
-        animator.SetFloat("Horizontal", xDirection);
-        animator.SetFloat("Vertical", yDirection);
+        animator.SetFloat("Horizontal", xDirection);           //Skapar Floats f�r animatorn s� r�tt animationer spelas. Victor
+        animator.SetFloat("Vertical", yDirection); 
+
         
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);       
     }
 
 
